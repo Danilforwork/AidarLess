@@ -15,7 +15,7 @@ public class VozMas {
         }
         boolean flag = true;
         for (int i = 0; i < n - 1; i++) {
-            if (mass[i] >= mass[i + 1]) {
+            if (mass[i] > mass[i + 1]) { //fix усл 3 1 1 2 было true и тд
                 flag = false;
                 break;
             }
